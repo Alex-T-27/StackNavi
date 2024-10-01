@@ -1,19 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import StackNavigator from './navigation/StackNavigator';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style ={styles.word}>Reset Your Password</Text>
-      <Text style={styles.words}>We will send an email to reset your password</Text>
-      <TouchableOpacity style={styles.email}>
-        <Text style={{fontSize:17, fontWeight:'bold'}}>Email</Text>
-      </TouchableOpacity>
-      <TextInput placeholder='Enter your email' style={styles.enter}/>
-      <TouchableOpacity>
-        <Text style={styles.emailmeword}>Email me</Text>
-      </TouchableOpacity>
-    </View>
+    <StackNavigator/>
+    // <View style={styles.container}>
+    //   <Text style ={styles.word}>Reset Your Password</Text>
+    //   <Text style={styles.words}>We will send an email to reset your password</Text>
+    //   <TouchableOpacity style={styles.email}>
+    //     <Text style={{fontSize:17, fontWeight:'bold'}}>Email</Text>
+    //   </TouchableOpacity>
+    //   <TextInput placeholder='Enter your email' style={styles.enter}/>
+    //   <TouchableOpacity>
+    //     <Text style={styles.emailmeword}>Email me</Text>
+    //   </TouchableOpacity>
+    // </View>
   );
 }
 
